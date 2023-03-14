@@ -8,7 +8,7 @@ body
 {
     display: flex;
     min-height: 100vh;
-    background-color: rgb(141, 183, 183);
+    background-color: rgb(219, 222, 222);
     justify-content: center;
     align-items: center;
 }
@@ -70,8 +70,20 @@ body
 
 .zero-2
 {
-    margin-left: -18px;
+    margin-left: -17px;
     z-index: 6;
+}
+
+.one-1
+{
+    z-index: 1;
+    height: 40px;
+    width: 20px;
+    background-color: white;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    transform: rotate(50deg);
+    margin-right: -4px;
 }
 
 .one-2 
@@ -81,5 +93,5 @@ body
     width: 25px;
     background-color: white;
     box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: 3px;
 }
