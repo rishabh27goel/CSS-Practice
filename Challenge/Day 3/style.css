@@ -42,7 +42,7 @@ body
     right: 0;
     background-color: #7DDFFC;
     height: 124px;
-    animation: sky-turns-black 4s infinite;
+    animation: sky-turns-black 4s cubic-bezier(.4,0,.49,1) infinite;
 }
 
 .ground
@@ -54,7 +54,7 @@ body
     box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.3);
     background-color: #F0DE75;
     height: 56px;
-    animation: ground-turns-black 4s infinite;
+    animation: ground-turns-black 4s cubic-bezier(.4,0,.49,1) infinite;
 }
 
 .pyramid-left
@@ -67,8 +67,8 @@ body
     z-index: 1;
     clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
     background-color: #F4F4F4;
-    /* box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3); */
-    animation: pyramid-change 4s infinite;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    animation: pyramid-change 4s cubic-bezier(.4,0,.49,1) infinite;
 }
 
 .pyramid-right
@@ -81,8 +81,8 @@ body
     z-index: 1;
     clip-path: polygon(65% 100%, 100% 100%, 50% 0%);
     background-color: #DDDADA;
-    /* box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3); */
-    animation: pyramid-change 4s infinite reverse;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    animation: pyramid-change 4s cubic-bezier(.4,0,.49,1) infinite reverse;
 }
 
 .sun
@@ -96,7 +96,7 @@ body
     background-color: #FFEF00;
     transform-origin: 50% 400%;
     /* box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.2); */
-    animation: sun-goes-down 4s infinite;
+    animation: sun-goes-down 4s cubic-bezier(.4,0,.49,1) infinite;
 }
 
 .shadow
@@ -110,7 +110,7 @@ body
     background: rgba(0,0,0,0.2);
     transform-origin: 50% 0%;
     clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
-    animation: shadow-on-the-floor 4s infinite;
+    animation: shadow-on-the-floor 4s cubic-bezier(.4,0,.49,1) infinite;
 }
 
 /* Animations */
