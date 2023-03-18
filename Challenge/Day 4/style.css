@@ -1,0 +1,120 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(185, 120, 7, 0.2);
+}
+
+.container
+{
+    height: 400px;
+    width: 400px;
+    background-color: #E56262;
+    box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.dot1
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    left: 30px;
+    border-radius: 50%;
+    z-index: 3;
+    box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.3);
+    background-color: white;
+    animation-fill-mode: both;
+    animation: dot-1-effect 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+
+.dot2
+{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.3);
+    background-color: white;
+    animation-fill-mode: both;
+    animation: dot-2-effect 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+
+.dot3
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 1px 2px 7px 0px rgba(0,0,0,0.3);
+    background-color: white;
+    animation-fill-mode: both;
+    animation: dot-3-effect 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+
+/* Animations */
+@keyframes dot-1-effect
+{
+    0%, 70%
+    {
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+        transform: scale(0);
+    }
+    100%
+    {
+        box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+        transform: scale(1);
+    }
+}
+
+@keyframes dot-2-effect
+{
+    0%, 40% {
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform: scale(0);
+	}
+    100%
+    {
+        box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: scale(1);
+    }
+}
+
+@keyframes dot-3-effect
+{
+    0%, 10% {
+		box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+		transform: scale(0);
+	}
+
+	100% {
+		box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+		transform: scale(1);
+	}
+}
